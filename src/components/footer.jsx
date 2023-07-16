@@ -14,6 +14,7 @@ const Footer = () => {
             </div>
             <p className="text text-md">Leveraging machine learning, we raise diabetes awareness and provide accurate risk assessment tools.</p>
             <p className="text text-sm">&copy; {currentYear} GlucAI. All rights reserved.</p>
+            <p className="text text-xm">Development team : Wena Harilegawa and Andhika Restu</p>
           </div>
         </div>
       </div>

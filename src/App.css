@@ -141,9 +141,14 @@ h1, h2, h3{
 .text-lg{
     font-size: 2rem;
     font-weight: 500;
+    text-align: justify;
 }
 .text-sm{
     font-size: 1.3rem;
+}
+.text-xm{
+    font-size: 1rem;
+    color: #555556;
 }
 .py{
     padding: 10.9rem 0;
@@ -161,7 +166,7 @@ h1, h2, h3{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 3.2rem 0;
+    padding: 1.6rem 0;
     z-index: 999;
 }
 .navbar .container{
@@ -169,8 +174,9 @@ h1, h2, h3{
         -ms-flex-pack: justify;
             justify-content: space-between;
 }
-.navbar-brand img{
+.navbar-brand{
     width: 168px;
+    font-size: 2rem;
 }
 .navbar-show-btn, .navbar-hide-btn{
     background-color: transparent;

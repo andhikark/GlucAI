@@ -24,9 +24,6 @@ function Header(){
                     <li className="nav-item">
                     <a href="#" className="nav-link">Home</a>
                     </li>
-                    <li className="nav-item">
-                    <a href="#" className="nav-link">About</a>
-                    </li>
                 </ul>
                 </div>
             </div>
@@ -35,7 +32,7 @@ function Header(){
             <div className="header-inner text-white text-center">
             <div className="container grid">
                 <div className="header-inner-left">
-                <h1>your most trusted<br /> <span>health partner</span></h1>
+                <h1>most trusted<br /> <span>health partner</span></h1>
                 <p className="lead">the best Glucose checker services for you</p>
                 <p className="text text-md">Uncover hidden risks, take charge of your well-being, and embrace a healthier future with our AI-powered diabetes detection solutions.</p>
                 <div className="btn-group">
