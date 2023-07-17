@@ -127,8 +127,8 @@ h1, h2, h3{
     font-size: 1.5rem;
 }
 .text-lg{
-    font-size: 2rem;
-    font-weight: 500;
+    font-size: 1.7rem;
+    font-weight: 400;
     text-align: justify;
 }
 .text-sm{
@@ -176,15 +176,13 @@ button[class^="navbar"]:hover {
   transform: scale(1.1);
 }
 
-
-
 .navbar-collapse {
     position: fixed;
     top: 0;
     right: 0;
     width: 100%;
-    height: 100%;
-    padding: 8rem 3rem;
+    height: 10%;
+    padding: 6rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -204,7 +202,7 @@ button[class^="navbar"]:hover {
     top: 4.5rem;
 }
 .nav-item{
-    margin: 1.4rem 0;
+    margin: 1.4rem 1rem;
 }
 .nav-link {
     opacity: 0.8;
