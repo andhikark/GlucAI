@@ -1,23 +1,30 @@
-import React from "react"
+import React, {useState } from "react"
 import '../App.css';
 import headerImage from '../image/header.png';
 import hamburger from '../image/ham-menu-icon.png';
 import closeIcon from '../image/close-icon.png';
 
 function Header(){
+
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+      setIsMenuOpen(!isMenuOpen);
+    };
+
     return(
         <header className="header bg-blue">
-            <nav className="navbar bg-blue">
+            <nav className={`navbar bg-blue ${isMenuOpen ? "navbar-show" : ""}`}>
             <div className="container flex">
                 <a href="" className="navbar-brand">
                 <h1>GlucAI</h1>
                 </a>
-                <button type="button" className="navbar-show-btn">
+                <button type="button" className="navbar-show-btn" onClick={toggleMenu}>
                 <img src={hamburger} alt="menu" />
                 </button>
 
-                <div className="navbar-collapse bg-white">
-                <button type="button" className="navbar-hide-btn">
+                <div className={`navbar-collapse bg-white ${isMenuOpen ? "navbar-show" : ""}`}>
+                <button type="button" className="navbar-hide-btn" onClick={toggleMenu}>
                     <img src={closeIcon} alt="close" />
                 </button>
                 <ul className="navbar-nav">
