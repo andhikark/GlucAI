@@ -409,27 +409,17 @@ button[class^="navbar"]:hover {
 }
 .form-element .form-control{
     width: 100%;
-    background-color: #3373dd;
+    background-color: #9badd0;
     border: none;
     outline: 0;
     padding: 1rem 1.6rem;
     margin-bottom: 1.6rem;
     color: var(--light-color);
 }
-.form-element .form-control::-webkit-input-placeholder{
-    color: var(--light-color);
-}
-.form-element .form-control::-moz-placeholder{
-    color: var(--light-color);
-}
-.form-element .form-control:-ms-input-placeholder{
-    color: var(--light-color);
-}
-.form-element .form-control::-ms-input-placeholder{
-    color: var(--light-color);
-}
+
 .form-element .form-control::placeholder{
     color: var(--light-color);
+    color : black;
 }
 .btn-submit{
     margin-top: 4rem;
