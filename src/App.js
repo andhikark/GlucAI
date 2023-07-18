@@ -4,15 +4,17 @@ import About from './components/about';
 import BannerOne from './components/bannerOne';
 import Contact from './components/contact';
 import Footer from './components/footer';
+import Form from './components/formPage';
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      {/* <Header />
       <About />
       <BannerOne />
       <Contact />
-      <Footer />
+      <Footer /> */}
+      <Form />
     </div>
   );
 }
