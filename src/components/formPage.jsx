@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import '../styles/form.css';
 
 const Form = () => {
+  // const [showPopup, setShowPopup] = useState(false);
   const [formData, setFormData] = useState({
     gender: '',
     age: '',
-    hypertension: '0',
-    heartDisease: '0',
-    smokingHistory: '0',
+    hypertension: '-1',
+    heartDisease: '-1',
+    smokingHistory: '-1',
     bmi: '',
     hba1cLevel: '',
     bloodGlucoseLevel: '',
@@ -25,6 +26,7 @@ const Form = () => {
     e.preventDefault();
     // Handle form submission here with the formData state
     console.log(formData);
+
   };
 
   return (
@@ -37,6 +39,7 @@ const Form = () => {
             <option value="">Select Gender</option>
             <option value="1">Male</option>
             <option value="2">Female</option>
+            <option value="3">Other</option>
           </select>
         </div>
 
@@ -61,7 +64,7 @@ const Form = () => {
           >
             <option value="">Select Option</option>
             <option value="1">Yes</option>
-            <option value="2">No</option>
+            <option value="0">No</option>
           </select>
         </div>
 
@@ -74,7 +77,7 @@ const Form = () => {
           >
             <option value="">Select Option</option>
             <option value="1">Yes</option>
-            <option value="2">No</option>
+            <option value="0">No</option>
           </select>
         </div>
 
