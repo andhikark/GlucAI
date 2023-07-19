@@ -3,6 +3,9 @@ import '../App.css';
 import headerImage from '../image/header.png';
 import hamburger from '../image/ham-menu-icon.png';
 import closeIcon from '../image/close-icon.png';
+import { Link } from 'react-router-dom';
+import { animateScroll as scroll } from 'react-scroll';
+
 
 function Header(){
 
@@ -16,7 +19,11 @@ function Header(){
         <header className="header bg-blue">
             <nav className={`navbar bg-blue ${isMenuOpen ? "navbar-show" : ""}`}>
             <div className="container flex">
-                <a href="" className="navbar-brand">
+                <a
+                    href="#"
+                    className="navbar-brand"
+                    onClick={() => scroll.scrollToTop({ duration: 700 })}
+                >
                 <h1>GlucAI</h1>
                 </a>
                 <button type="button" className="navbar-show-btn" onClick={toggleMenu}>
@@ -29,7 +36,13 @@ function Header(){
                 </button>
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                    <a href="#" className="nav-link">Home</a>
+                        <a
+                        href="#"
+                        className="nav-link"
+                        onClick={() => scroll.scrollToTop({ duration: 700 })}
+                        >
+                        Home
+                        </a>
                     </li>
                 </ul>
                 </div>
@@ -43,7 +56,7 @@ function Header(){
                 <p className="lead">the best Glucose checker services for you</p>
                 <p className="text text-md">Uncover hidden risks, take charge of your well-being, and embrace a healthier future with our AI-powered diabetes detection solutions.</p>
                 <div className="btn-group">
-                    <a href="#" className="btn btn-light-blue">Run Diabetes test</a>
+                    <Link to="/form" className="btn btn-light-blue">Run Diabetes test</Link>
                 </div>
                 </div>
                 <div className="header-inner-right">

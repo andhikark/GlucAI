@@ -1,45 +1,90 @@
-import React from 'react';
-import '../styles/form.css'
+import React, { useState } from 'react';
+import '../styles/form.css';
 
 const Form = () => {
+  const [formData, setFormData] = useState({
+    gender: '',
+    age: '',
+    hypertension: '0',
+    heartDisease: '0',
+    smokingHistory: '0',
+    bmi: '',
+    hba1cLevel: '',
+    bloodGlucoseLevel: '',
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission here with the formData state
+    console.log(formData);
+  };
+
   return (
     <div className="form-container">
-      <h1>Formulir Data Pasien</h1>
-      <form method="POST">
+      <h1>Patient Form</h1>
+      <form onSubmit={handleSubmit}>
         <div className="form-group">
-            <label htmlFor="gender">Gender:</label>
-                <select name="gender" id="gender" required>
-                    <option value="">Select Gender</option>
-                    <option value="0">Male</option>
-                    <option value="1">Female</option>
-                </select>
+          <label htmlFor="gender">Gender:</label>
+          <select name="gender" id="gender" required onChange={handleChange}>
+            <option value="">Select Gender</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+          </select>
         </div>
-
 
         <div className="form-group">
           <label htmlFor="age">Age:</label>
-          <input type="number" name="age" id="age" min="0" required />
+          <input
+            type="number"
+            name="age"
+            id="age"
+            min="0"
+            required
+            onChange={handleChange}
+          />
         </div>
 
         <div className="form-group">
           <label htmlFor="hypertension">Hypertension:</label>
-          <select name="hypertension" id="hypertension">
+          <select
+            name="hypertension"
+            id="hypertension"
+            onChange={handleChange}
+          >
+            <option value="">Select Option</option>
             <option value="1">Yes</option>
-            <option value="0">No</option>
+            <option value="2">No</option>
           </select>
         </div>
 
         <div className="form-group">
-          <label htmlFor="heart_disease">Heart Disease:</label>
-          <select name="heart_disease" id="heart_disease">
+          <label htmlFor="heartDisease">Heart Disease:</label>
+          <select
+            name="heartDisease"
+            id="heartDisease"
+            onChange={handleChange}
+          >
+            <option value="">Select Option</option>
             <option value="1">Yes</option>
-            <option value="0">No</option>
+            <option value="2">No</option>
           </select>
         </div>
 
         <div className="form-group">
-          <label htmlFor="smoking_history">Smoking History:</label>
-          <select name="smoking_history" id="smoking_history">
+          <label htmlFor="smokingHistory">Smoking History:</label>
+          <select
+            name="smokingHistory"
+            id="smokingHistory"
+            onChange={handleChange}
+          >
             <option value="0">Never</option>
             <option value="1">No Info</option>
             <option value="2">Current</option>
@@ -51,17 +96,44 @@ const Form = () => {
 
         <div className="form-group">
           <label htmlFor="bmi">BMI:</label>
-          <input type="number" step="0.01" name="bmi" id="bmi" min = "0.00" placeholder=' Example : 22.60' required />
+          <input
+            type="number"
+            step="0.01"
+            name="bmi"
+            id="bmi"
+            min="0.00"
+            placeholder=" Example: 22.60"
+            required
+            onChange={handleChange}
+          />
         </div>
 
         <div className="form-group">
-          <label htmlFor="HbA1c_level">HbA1c Level:</label>
-          <input type="number" step="0.01" name="HbA1c_level" id="HbA1c_level" min = "0.00" placeholder='Example : 5.5' required />
+          <label htmlFor="hba1cLevel">HbA1c Level:</label>
+          <input
+            type="number"
+            step="0.01"
+            name="hba1cLevel"
+            id="hba1cLevel"
+            min="0.00"
+            placeholder="Example: 5.5"
+            required
+            onChange={handleChange}
+          />
         </div>
 
         <div className="form-group">
-          <label htmlFor="blood_glucose_level">Blood Glucose Level:</label>
-          <input type="number" step="0.01" name="blood_glucose_level" id="blood_glucose_level" min = "0.00"  placeholder='Example : 90' required />
+          <label htmlFor="bloodGlucoseLevel">Blood Glucose Level:</label>
+          <input
+            type="number"
+            step="0.01"
+            name="bloodGlucoseLevel"
+            id="bloodGlucoseLevel"
+            min="0.00"
+            placeholder="Example: 90"
+            required
+            onChange={handleChange}
+          />
         </div>
 
         <input type="submit" value="Submit" className="submit-btn" />
