@@ -12,11 +12,11 @@ def predict():
         gender = request.form['gender']
         age = request.form['age']
         hypertension = request.form['hypertension']
-        heart_disease = request.form['heart_disease']
-        smoking_history = request.form['smoking_history']
+        heart_disease = request.form['heartDisease']
+        smoking_history = request.form['smokingHistory']
         bmi = request.form['bmi']
-        HbA1c_level = request.form['HbA1c_level']
-        blood_glucose_level = request.form['blood_glucose_level']
+        HbA1c_level = request.form['HbA1cLevel']
+        blood_glucose_level = request.form['bloodGlucoseLevel']
 
         model = joblib.load('trained_model.joblib')
 
