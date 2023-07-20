@@ -25,12 +25,15 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    // Make a POST request to the Flask backend
-    axios.post('http://localhost:5000/result', formData)
+
+    axios
+      .post('http://localhost:5000/', formData)
       .then((response) => {
-        // Handle the response from the backend (prediction)
-        setPredictionResult(response.data);
+          console.log(formData);
+          setPredictionResult(response.data.prediction);
+           console.log(response.data.prediction == 0);
+           console.log(predictionResult);
+        
       })
       .catch((error) => {
         console.error('Error:', error);
@@ -65,11 +68,7 @@ const Form = () => {
 
         <div className="form-group">
           <label htmlFor="hypertension">Hypertension:</label>
-          <select
-            name="hypertension"
-            id="hypertension"
-            onChange={handleChange}
-          >
+          <select name="hypertension" id="hypertension" onChange={handleChange}>
             <option value="">Select Option</option>
             <option value="1">Yes</option>
             <option value="0">No</option>
@@ -78,11 +77,7 @@ const Form = () => {
 
         <div className="form-group">
           <label htmlFor="heartDisease">Heart Disease:</label>
-          <select
-            name="heartDisease"
-            id="heartDisease"
-            onChange={handleChange}
-          >
+          <select name="heartDisease" id="heartDisease" onChange={handleChange}>
             <option value="">Select Option</option>
             <option value="1">Yes</option>
             <option value="0">No</option>
@@ -96,6 +91,7 @@ const Form = () => {
             id="smokingHistory"
             onChange={handleChange}
           >
+            <option value="">Select Option</option>
             <option value="0">Never</option>
             <option value="1">No Info</option>
             <option value="2">Current</option>
@@ -149,6 +145,8 @@ const Form = () => {
 
         <input type="submit" value="Submit" className="submit-btn" />
       </form>
+
+
     </div>
   );
 };
