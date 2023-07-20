@@ -6,7 +6,7 @@ import pandas as pd
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "http://localhost:80"}})  # Replace with your React app's URL
 
-@app.route('/', methods=['POST'])
+@app.route('/result', methods=['POST'])
 def predict():
     try:
         gender = request.form['gender']
@@ -15,7 +15,7 @@ def predict():
         heart_disease = request.form['heartDisease']
         smoking_history = request.form['smokingHistory']
         bmi = request.form['bmi']
-        HbA1c_level = request.form['HbA1cLevel']
+        HbA1c_level = request.form['hba1cLevel']
         blood_glucose_level = request.form['bloodGlucoseLevel']
 
         model = joblib.load('trained_model.joblib')

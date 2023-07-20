@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import '../styles/form.css';
+import axios from 'axios';
 
 const Form = () => {
-  // const [showPopup, setShowPopup] = useState(false);
+  const [predictionResult, setPredictionResult] = useState('');
   const [formData, setFormData] = useState({
     gender: '',
     age: '',
@@ -24,9 +25,16 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here with the formData state
-    console.log(formData);
-
+    
+    // Make a POST request to the Flask backend
+    axios.post('http://localhost:5000/result', formData)
+      .then((response) => {
+        // Handle the response from the backend (prediction)
+        setPredictionResult(response.data);
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
   };
 
   return (
