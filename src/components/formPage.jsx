@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import '../styles/form.css';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+
+
 
 const Form = () => {
+  const navigate = useNavigate();
   const [predictionResult, setPredictionResult] = useState('');
   const [formData, setFormData] = useState({
     gender: '',
@@ -32,7 +36,19 @@ const Form = () => {
           console.log(formData);
           setPredictionResult(response.data.prediction);
            console.log(response.data.prediction == 0);
-           console.log(predictionResult);
+
+           if (response.data.prediction == 0) {
+            navigate(`/loading`);
+              setTimeout(() => {
+                navigate(`/negative`);
+              }, 2000);
+          } else {
+            navigate(`/loading`);
+              setTimeout(() => {
+                navigate(`/positive`);
+              }, 2000);
+          }
+
         
       })
       .catch((error) => {
@@ -144,6 +160,7 @@ const Form = () => {
         </div>
 
         <input type="submit" value="Submit" className="submit-btn" />
+       
       </form>
 
 

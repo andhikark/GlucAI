@@ -2,17 +2,22 @@ import { BrowserRouter as Router, Route, Routes,useNavigate } from "react-router
 import './App.css';
 import Main from './Main';
 import Form from './components/formPage';
+import Negative from "./components/negative";
+import Positive from "./components/positive";
+import Loading from "./components/Loading";
+
 
 function App() {
   return (
-    <Router>
       <div className="App">
         <Routes>
             <Route path="/" element={<Main />} />
             <Route path="/form" element={<Form />} />
+            <Route path="/positive" element={<Positive/>} />
+            <Route path="/negative" element={<Negative />} />
+            <Route path="/loading" element={<Loading />} />
         </Routes>
       </div>
-    </Router>
   );
 }
 
