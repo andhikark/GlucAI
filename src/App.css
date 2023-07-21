@@ -784,7 +784,7 @@ button[class^="navbar"]:hover {
     height: 80px;
     border-radius: 50%;
     border: 6px solid rgba(255, 255, 255, 0.3);
-    border-top: 6px solid #6EE7B7;
+    border-top: 6px solid #697fff;
     animation: spin 1.5s linear infinite;
   }
   
@@ -792,7 +792,7 @@ button[class^="navbar"]:hover {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #6EE7B7;
+    background: #6377ec;
     position: absolute;
     top: calc(50% - 20px);
     left: calc(50% - 20px);

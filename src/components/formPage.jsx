@@ -35,17 +35,16 @@ const Form = () => {
       .then((response) => {
           console.log(formData);
           setPredictionResult(response.data.prediction);
-           console.log(response.data.prediction == 0);
 
            if (response.data.prediction == 0) {
             navigate(`/loading`);
               setTimeout(() => {
-                navigate(`/negative`);
+                navigate(`/negative`, { replace: true });
               }, 2000);
           } else {
             navigate(`/loading`);
               setTimeout(() => {
-                navigate(`/positive`);
+                navigate(`/positive`, { replace: true });
               }, 2000);
           }
 
