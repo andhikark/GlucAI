@@ -1,0 +1,130 @@
+/* Negative.css */
+
+.negative-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0050d5;
+    padding: 30px;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .negative-icon {
+    font-size: 72px;
+    color: #00ff00;
+    margin-bottom: 20px;
+  }
+  
+  .negative-heading {
+    font-size: 48px;
+    font-weight: bold;
+    color: #00ff00;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+  }
+  
+  .negative-description {
+    font-size: 2rem;
+    text-align: justify;
+    line-height: 1.6;
+    max-width: 600px;
+  }
+  
+  .negative-description-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .negative-description-item-icon {
+    font-size: 24px;
+    color: #ffffff;
+    margin-right: 10px;
+  }
+  
+  .negative-action {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .negative-action a {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #0050d5;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .negative-action a:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+/* Positive.css */
+
+.positive-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0050d5;
+    padding: 30px;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .positive-icon {
+    font-size: 72px;
+    color: #ff0000; 
+    margin-bottom: 20px;
+  }
+  
+  .positive-heading {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ff0000;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+  }
+  
+  .positive-description {
+    font-size: 2rem;
+    text-align: justify;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+  
+  .positive-description em {
+    font-style: italic;
+  }
+  
+  .positive-action {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .positive-action button {
+    background-color: #ffffff;
+    color: #0050d5;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .positive-action button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
