@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+![Screenshot (27)](https://github.com/andhikark/GlucAI/assets/75937835/22a45429-81d6-4a62-8f49-bcc05564aea6)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 
+Welcome to GlucAI - Your Personal Diabetes Checker!
 
-## Available Scripts
+GlucAI is an innovative website designed to revolutionize diabetes management through cutting-edge machine learning technology. Our platform leverages the power of advanced algorithms to provide personalized insights and assist users in understanding their diabetes status like never before.
 
-In the project directory, you can run:
+With GlucAI, managing diabetes has never been easier. By simply inputting your relevant health data, such as blood glucose levels, bmi, and disease history , our intelligent machine learning model goes to work, analyzing and interpreting your information with remarkable accuracy.
 
-### `npm start`
+Dataset from : [Kaggle](https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br> </br> 
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Responsive layout
+- User-friendly interface 
+- Patient Form 
 
-### `npm test`
+<br> </br>
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Client:** Reactjs, Javascript, HTML, CSS
+<br/>
+**Server:** Flask
 
-### `npm run build`
+<br> </br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Screenshots
+![Screenshot (29)](https://github.com/andhikark/GlucAI/assets/75937835/bb915d6d-8447-4f14-ac05-b4a009eecfa8)
+![Screenshot (30)](https://github.com/andhikark/GlucAI/assets/75937835/629e573a-cf48-4129-adae-8cce064c1b56)
+![Screenshot (32)](https://github.com/andhikark/GlucAI/assets/75937835/9cc7832c-9c07-4c55-9bec-964f4e103b9b)
+![Screenshot (31)](https://github.com/andhikark/GlucAI/assets/75937835/3244ed3e-ddb9-4103-9c77-eb94c59d6206)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Developer Team
+@WenaHarle
+@andhikark
