@@ -15,6 +15,7 @@ Dataset from : [Kaggle](https://www.kaggle.com/datasets/iammustafatz/diabetes-pr
 - Responsive layout
 - User-friendly interface 
 - Patient Form 
+- Machine learning to calculate the result
 
 <br> </br>
 ## Tech Stack
