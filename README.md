@@ -9,6 +9,9 @@ With GlucAI, managing diabetes has never been easier. By simply inputting your r
 
 Dataset from : [Kaggle](https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset)
 
+Official Link: 
+[GlucAI](https://glucai.purbadev.online/)
+
 <br> </br> 
 ## Features
 
