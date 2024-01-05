@@ -11,7 +11,7 @@ Dataset from : [Kaggle](https://www.kaggle.com/datasets/iammustafatz/diabetes-pr
 
 Official Link: 
 [GlucAI](https://glucai.purbadev.online/)
-(Not hosted anymore :( )
+(Not hosted anymore :(     )
 <br> </br> 
 ## Features
 
